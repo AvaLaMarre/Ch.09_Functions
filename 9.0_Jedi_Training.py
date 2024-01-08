@@ -1,42 +1,46 @@
 # 9.0 Jedi Training (45pts)  Name:________________
 
 
-#1.) Correct the following code: (The user's number should be increased by 1 and printed.) (2pts)
+# 1.() Correct the following code: (The user's number should be increased by 1 and printed.) (2pts)
+print("")
+
 
 def increase(x):
     return x + 1
- 
-num = input("Enter a number: ")
+
+
+x = int(input("Enter a number: "))
 increase(x)
-print("Your number has been increased to", x)
-                        
- 
+print("Your number has been increased to", increase(x))
+
+# 2.() Correct the following code to print 1-10:  (2pts)
+print("")
 
 
-#2.) Correct the following code to print 1-10:  (2pts)
-
-def count_to_ten:
-    for i in range[10]:
+def count_to_ten():
+    for i in range(11):
         print(i)
- 
+
+
 count_to_ten()
 
 
+# 3.() Correct the following code to sum the list:  (2pts)
+print("")
 
-#3.) Correct the following code to sum the list:  (2pts)
 
-def sum_list(list):
-    for i in list:
+def sum_list(list_var):
+    for i in list_var:
         sum = i
-        return sum
- 
+        end_sum = i
+        return end_sum
+
+
 list = [45, 2, 10, -5, 100]
 print(sum_list(list))
 
 
-
-
-#4.) Correct the following code which should reverse the sentence that is entered.  (2pts)
+# 4.() Correct the following code which should reverse the sentence that is entered.  (2pts)
 
 def reverse(text):
     result = ""
@@ -44,31 +48,30 @@ def reverse(text):
     for i in range(text_length):
         result = result + text[i * -1]
     return result
- 
+
+
 text = input("Enter a sentence: ")
 print(reverse(text))
 
 
-
-#5.) Correct the following code: (if one of the options is not entered it should print the statements)  (2pts)
+# 5.() Correct the following code: (if one of the options is not entered it should print the statements)  (2pts)
 
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command == "f" or command == "m" or command == "s" or command == "d" or command == "q":
             return command
- 
-        print("Hey, that's not a command. Here are your options:" )
+
+        print("Hey, that's not a command. Here are your options:")
         print("f - Full speed ahead")
         print("m - Moderate speed")
         print("s - Status")
         print("d - Drink")
         print("q - Quit")
- 
+
+
 user_command = get_user_choice()
 print("You entered:", user_command)
-
-
 
 '''
 #6.) MINI FUNCTION (5pts)
@@ -98,8 +101,6 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
-
-
 
 '''
 7.) BOX_FUNCTION (5pts)
@@ -134,8 +135,6 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
-
-
 
 '''
 8.) FIND FUNCTION (5pts)
@@ -208,8 +207,6 @@ fizzbuzz
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
 
-
-
 '''
 10.) FIBONACCI (5pts)
 -------------------------------
@@ -222,9 +219,6 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
-
-
-
 
 '''
 11.) 10,000 NUMBERS (5pts)
@@ -248,9 +242,6 @@ OUTPUT
 [2,5,1,6,3] #something like this 
 '''
 
-
-
-
 '''
 Function #2: Write a function called count_list that takes
 in a list and a number. Have the function return the number
@@ -269,8 +260,6 @@ OUTPUT
 3 
 '''
 
-
-
 '''
 Function #3: Write a function called average_list that returns the 
 average of the list passed into it. Once you've finished writing your
@@ -288,20 +277,12 @@ OUTPUT
 2.0
 '''
 
-
-
-
 '''
 Now that the functions have been created, use them all in a main program that will:
 1.) Create a list of 10,000 random numbers from 1 to 6. (1 line of code)
 2.) Print the count of 1 through 6. (For example, "There are 1361 amount of 2s") (3 lines of code)
 3.) Print the average of all 10,000 random numbers. (Make sure it's a float) (2 lines of code)
 '''
-
-
-
-
-
 
 '''
 12.) BB8 DRAWING PROGRAM (5pts)
@@ -323,16 +304,20 @@ import arcade
 # Opens a 600px by 600px window and puts BB8 in the title
 arcade.open_window(600, 600, "BB8")
 
-# Function to draw BB8 robots
-def draw_BB8(x,y, radius):
-  
 
-# The main function where we set background color, start and finish rendering and run.
+# Function to draw BB8 robots
+def draw_BB8(x, y, radius):
+    pass
+
+
+'''The main function where we set background color, start and finish rendering and run.'''
+
+
 def main():
     arcade.set_background_color(arcade.color.WHEAT)
     arcade.start_render()
 
-    draw_BB8(100,50,50)
+    draw_BB8(100, 50, 50)
     draw_BB8(300, 300, 30)
     draw_BB8(500, 100, 20)
     draw_BB8(500, 400, 60)
@@ -341,7 +326,7 @@ def main():
     arcade.finish_render()
     arcade.run()
 
-# Calls the main function
-if __name__=="__main__":
-    main()
 
+# Calls the main function
+if __name__ == "__main__":
+    main()
