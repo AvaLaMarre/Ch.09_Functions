@@ -32,8 +32,7 @@ print("")
 def sum_list(list_var):
     for i in list_var:
         sum = i
-        end_sum = i
-        return end_sum
+        return sum
 
 
 list = [45, 2, 10, -5, 100]
