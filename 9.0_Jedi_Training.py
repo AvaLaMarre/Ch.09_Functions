@@ -1,3 +1,5 @@
+import arcade
+
 # 9.0 Jedi Training (45pts)  Name:________________
 
 
@@ -134,6 +136,21 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+
+
+def box(y, x):
+    for i in range(y):
+        o_num = x
+        while o_num > 0:
+            print("o", end="")
+            o_num -= 1
+
+
+box(7, 5)
+print()
+box(3, 2)
+print()
+box(3, 10)
 
 '''
 8.) FIND FUNCTION (5pts)
@@ -298,7 +315,6 @@ it to the one on the website.
 '''
 
 # Imports arcade module
-import arcade
 
 # Opens a 600px by 600px window and puts BB8 in the title
 arcade.open_window(600, 600, "BB8")
