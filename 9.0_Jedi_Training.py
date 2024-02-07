@@ -29,14 +29,14 @@ count_to_ten()
 print("")
 
 
-def sum_list(list_var):
-    for i in list_var:
-        sum = i
+def sum_list(imp_list):
+    for item in imp_list:
+        sum = item
         return sum
 
 
-list = [45, 2, 10, -5, 100]
-print(sum_list(list))
+num_list = [45, 2, 10, -5, 100]
+print(sum_list(num_list))
 
 
 # 4.() Correct the following code which should reverse the sentence that is entered.  (2pts)
