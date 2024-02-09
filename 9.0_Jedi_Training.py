@@ -136,14 +136,13 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+print()
 
-
-def box(y, x):
-    for i in range(y):
-        o_num = x
-        while o_num > 0:
+def box(y_val, x_val):
+    for i in range(y_val):
+        o_num = x_val
+        for item in range(x_val):
             print("o", end="")
-            o_num -= 1
 
 
 box(7, 5)
@@ -185,7 +184,7 @@ Use a for loop with an index variable and a range.
 Inside the loop use an if statement. This function 
 can be written in about four lines of code.
 '''
-
+def find(list, key):
 '''
 9.) FIZZBUZZ (5pts)
 -------------------------------
